@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+    <!-- Stylesheets
+    ============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic|Lato:400,300,600,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/dark.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+
+    
+	<title>Klook Travel-Activites,Tours,Attraction and Things to do-Klook</title>
+
+    <style>.side-header #primary-menu, .side-header #primary-menu ul { font-family: 'Lato'; }</style>
+
+</head>
+
+<body class="stretched side-header open-header push-wrapper close-header-on-scroll">
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+        <div id="header-trigger"><i class="icon-line-menu"></i><i class="icon-line-cross"></i></div>
+
+        <!-- Header
+        ============================================= -->
+        <header id="header" class="no-sticky">
+
+            <div id="header-wrap">
+
+                <div class="container clearfix">
+
+                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                    <!-- Logo
+                    ============================================= -->
+                    <div id="logo" class="nobottomborder">
+                        <center><a href="#" class="standard-logo" data-dark-logo="images/klook.jpg"><img src="images/klook.jpg" alt="Canvas Logo"></a></center>
+                        <a href="#" class="retina-logo" data-dark-logo="images/logo-side-dark@2x.png"><img src="images/klook.jpg" alt="Canvas Logo"></a>
+                    </div><!-- #logo end -->
+
+                    <!-- Primary Navigation
+                    ============================================= -->
+                    <nav id="primary-menu">
+
+                        <ul>
+                            <li><a href="After login.html"><div>Home</div></a>
+
+                                <ul>
+ 
+                    <div class="clearfix visible-md visible-lg">
+                        <a href="#" class="social-icon si-small si-borderless si-facebook">
+                            <i class="icon-facebook"></i>
+                            <i class="icon-facebook"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-small si-borderless si-twitter">
+                            <i class="icon-twitter"></i>
+                            <i class="icon-twitter"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-small si-borderless si-gplus">
+                            <i class="icon-gplus"></i>
+                            <i class="icon-gplus"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-small si-borderless si-pinterest">
+                            <i class="icon-pinterest"></i>
+                            <i class="icon-pinterest"></i>
+                        </a>
+
+                        <a href="#" class="social-icon si-small si-borderless si-github">
+                            <i class="icon-github"></i>
+                            <i class="icon-github"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header><!-- #header end -->
+
+        <section id="slider" class="slider-parallax swiper_wrapper full-screen clearfix">
+        	
+
+            <div class="swiper-container swiper-parent">
+                <div class="swiper-wrapper">
+
+                <div class="swiper-slide dark">
+                    <div class="container clearfix">
+                     			    <div class="fbox-icon">
+	                                	<center><a href="#"><img src="images/download.png" alt="" class="footer-logo"></center>
+										</a>
+							    	</div>			   	
+                    <div class="slider-caption slider-caption-center">
+
+                                                   
+
+                               <h2 data-caption-animate="fadeInUp"><span style="color:orange">Yours to </span> Explore</h2>
+                               <p data-caption-animate="fadeInUp" data-caption-delay="200">Discover and book amazing things to do at exclusive prices</p>
+                    </div>
+                </div>
+                                               
+                            <div class="video-wrap">
+                            <video poster="images/videos/explore-poster.jpg" preload="auto" loop autoplay muted>
+                                <source src='images/videos/explore.mp4' type='video/mp4' />
+                                <source src='images/videos/explore.webm' type='video/webm' />
+                            </video>
+                            <div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
+                        	</div>
+                    </div>
+                   
+
+                
+                <div id="slide-number"><div id="slide-number-current"></div><span>/</span><div id="slide-number-total"></div></div>
+            </div>
+
+            <script>
+                jQuery(document).ready(function($){
+                    var swiperSlider = new Swiper('.swiper-parent',{
+                        paginationClickable: false,
+                        slidesPerView: 1,
+                        grabCursor: true,
+                        onSwiperCreated: function(swiper){
+                            $('[data-caption-animate]').each(function(){
+                                var $toAnimateElement = $(this);
+                                var toAnimateDelay = $(this).attr('data-caption-delay');
+                                var toAnimateDelayTime = 0;
+                                if( toAnimateDelay ) { toAnimateDelayTime = Number( toAnimateDelay ) + 750; } else { toAnimateDelayTime = 750; }
+                                if( !$toAnimateElement.hasClass('animated') ) {
+                                    $toAnimateElement.addClass('not-animated');
+                                    var elementAnimation = $toAnimateElement.attr('data-caption-animate');
+                                    setTimeout(function() {
+                                        $toAnimateElement.removeClass('not-animated').addClass( elementAnimation + ' animated');
+                                    }, toAnimateDelayTime);
+                                }
+                            });
+                        },
+                        onSlideChangeStart: function(swiper){
+                            $('#slide-number-current').html(swiper.activeIndex + 1);
+                            $('[data-caption-animate]').each(function(){
+                                var $toAnimateElement = $(this);
+                                var elementAnimation = $toAnimateElement.attr('data-caption-animate');
+                                $toAnimateElement.removeClass('animated').removeClass(elementAnimation).addClass('not-animated');
+                            });
+                        },
+                        onSlideChangeEnd: function(swiper){
+                            $('#slider .swiper-slide').each(function(){
+                                if($(this).find('video').length > 0) { $(this).find('video').get(0).pause(); }
+                            });
+                            $('#slider .swiper-slide:not(".swiper-slide-active")').each(function(){
+                                if($(this).find('video').length > 0) {
+                                    if($(this).find('video').get(0).currentTime != 0 ) $(this).find('video').get(0).currentTime = 0;
+                                }
+                            });
+                            if( $('#slider .swiper-slide.swiper-slide-active').find('video').length > 0 ) { $('#slider .swiper-slide.swiper-slide-active').find('video').get(0).play(); }
+
+                            $('#slider .swiper-slide.swiper-slide-active [data-caption-animate]').each(function(){
+                                var $toAnimateElement = $(this);
+                                var toAnimateDelay = $(this).attr('data-caption-delay');
+                                var toAnimateDelayTime = 0;
+                                if( toAnimateDelay ) { toAnimateDelayTime = Number( toAnimateDelay ) + 300; } else { toAnimateDelayTime = 300; }
+                                if( !$toAnimateElement.hasClass('animated') ) {
+                                    $toAnimateElement.addClass('not-animated');
+                                    var elementAnimation = $toAnimateElement.attr('data-caption-animate');
+                                    setTimeout(function() {
+                                        $toAnimateElement.removeClass('not-animated').addClass( elementAnimation + ' animated');
+                                    }, toAnimateDelayTime);
+                                }
+                            });
+                        }
+                    });
+
+                    $('#slider-arrow-left').on('click', function(e){
+                        e.preventDefault();
+                        swiperSlider.swipePrev();
+                    });
+
+                    $('#slider-arrow-right').on('click', function(e){
+                        e.preventDefault();
+                        swiperSlider.swipeNext();
+                    });
+
+                    $('#slide-number-current').html(swiperSlider.activeIndex + 1);
+                    $('#slide-number-total').html(swiperSlider.slides.length);
+                });
+            </script>
+
+        </section>
+
+        <!-- Content
+        ============================================= -->
+        <section id="content">
+
+            <div class="content-wrap">
+
+                <div class="promo promo-full promo-border header-stick bottommargin-lg">
+                    <div class="container clearfix">
+                        
+                        <h3><span>Discover tours, attractions and </span>activities for your next adventure!</h3>
+                        
+                    </div>
+                </div>
+
+                <div class="container clearfix">
+
+                    <div class="col_one_third">
+                        <div class="feature-box fbox-effect">
+                            <div class="fbox-icon">
+                                <a href="#"><img src="images/download123.jpg" alt="" class="footer-logo">
+								</a>
+                            </div>
+                            <h3>Handpicked Experiences</h3>
+                            <p>Read real user reviews</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col_one_third">
+                        <div class="feature-box fbox-effect">
+                            <div class="fbox-icon">
+                                <a href="#"><img src="images/download321.jpg" alt="" class="footer-logo"></a>
+                            </div>
+                            <h3>Best Price Guaranteed</h3>
+                            <p>Discounts up to 60% off</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col_one_third col_last">
+                        <div class="feature-box fbox-effect">
+                            <div class="fbox-icon">
+                                <a href="#"><img src="images/download432.png" alt="" class="footer-logo"></a></i></a>
+                            </div>
+                            <h3>Seamless & Safe Booking</h3>
+                            <p>Hassle-free e-ticket entry</p>
+                        </div>
+                    </div>
+            			
+						<div class="heading-block center nomargin">
+									<h3>Recommended Top Destinations in India</h3>
+								</div>
+							</div>
+						</div>
+
+				<div class="container clear-bottommargin clearfix">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 bottommargin">
+							<div class="ipost clearfix">
+								<div class="entry-image">
+									<a href="https://www.klook.com/en-IN/city/132-mumbai/?krt=s20&krid=f4363730-f603-40f8-7a15-1ef2ec142413"><img class="image_fade" src="images/mumbai.png" alt="Image"></a>
+								</div>
+								<div class="entry-title">
+									<h3><a href="https://www.klook.com/en-IN/city/132-mumbai/?krt=s20&krid=f4363730-f603-40f8-7a15-1ef2ec142413">Mumbai</a></h3>
+								</div>
+								<div class="entry-content">
+								<p>Mumbai, previously called Bombay, is the most populated city in western India. This vibrant city is home to Bollywood, the world's largest tropical forest in an urban zone,and the country's fashion capital
+									</p>
+								</div>
+							</div>
+						</div>
+
+					<div class="col-md-3 col-sm-6 bottommargin">
+							<div class="ipost clearfix">
+								<div class="entry-image">
+									<a href="https://www.klook.com/en-IN/activity/14912-mysore-day-trip-bangalore/?krt=s21&krid=2cecb78b-29f3-41d0-6c4d-0f0763a3b176"><img class="image_fade" src="images/banglore.png" alt="Image"></a>
+								</div>
+								<div class="entry-title">
+									<h3><a href="https://www.klook.com/en-IN/activity/14912-mysore-day-trip-bangalore/?krt=s21&krid=2cecb78b-29f3-41d0-6c4d-0f0763a3b176">Bangalore</a></h3>
+								</div>
+								<div class="entry-content">
+									<p>Bengaluru (also called Bangalore) is the capital of India's southern Karnataka state. The center of India's high-tech industry, the city is also known for its parks and nightlife. </p>
+								</div>
+											
+                   <div class="clear"></div>
+                  						 
+                    <script type="text/javascript">
+
+                        jQuery(document).ready(function($) {
+
+                            var ocClients = $("#oc-clients-full");
+
+                            ocClients.owlCarousel({
+                                items: 6,
+                                margin: 60,
+                                loop: true,
+                                nav: false,
+                                autoplay: true,
+                                dots: false,
+                                autoplayHoverPause: true,
+                                responsive:{
+                                    0:{ items:2 },
+                                    480:{ items:3 },
+                                    768:{ items:4 },
+                                    992:{ items:5 },
+                                    1200:{ items:6 }
+                                }
+                            });
+
+                        });
+
+                    </script>
+
+                </div>
+
+            </div>
+            <h3 align="margin-right"><a href="Destination klook.html"> Click here to Explore more destinations in India..</a></h3>
+        </section>
+<!-- #content end -->
+
+        <!-- Footer
+        ============================================= -->
+        <footer id="footer" class="dark">
+
+            <div class="container">
+
+                <!-- Footer Widgets
+                ============================================= -->
+                <div class="footer-widgets-wrap clearfix">
+
+                    <div class="col_two_third">
+
+                        <div class="col_one_third">
+
+                            <div class="widget clearfix">
+
+                                <img src="images/images123.png" alt="" class="footer-logo">
+
+                                <p>We believe in <strong></strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong> way of travelling</p>
+
+                                <div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+                                    <address>
+                                        <strong>Location:</strong><br>
+                                        Always near you! <br>
+                                        
+                                    </address>
+                                    <abbr title="Phone Number"><strong>Phone:</strong></abbr> +91-123456789 <br>
+                                    <abbr title="Email Address"><strong>Email:</strong></abbr> klook@gmail.com
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col_one_third">
+
+                            <div class="widget widget_links clearfix">
+                     
+								<h4>About Klook</h4>
+
+								<ul>
+									<li><a href="https://www.klook.com/en-IN/about/">About us</a></li>
+									<li><a href="https://www.klook.com/en-IN/newsroom/">Press Release</a></li>
+									<li><a href="https://www.klook.com/blog/en-in/home-2/">Klook Blogs</a></li>
+									<li><a href="https://www.klook.com/en-IN/partner/">Partner with Us</a></li>
+									<li><a href="https://www.klook.com/en-IN/careers/">Careers</a></li>
+									
+								</ul>
+
+							</div>
+
+						</div>
+                         
+                                           
+                    </div>
+                    	
+              	      <div class="col_one_third col_last">
+
+                       		 <div class="widget clearfix" style="margin-bottom: 100px;">
+
+                           		 <div class="row">
+
+                                	<div class="col-md-6 bottommargin-sm">
+                                    	<div class="counter counter-small"><span data-from="50" data-to="10054" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
+                                    <h5 class="nobottommargin">Total Places</h5>
+                                </div>
+
+
+                                <div class="col-md-6 bottommargin-sm">
+                                    <div class="counter counter-small"><span data-from="100" data-to="60000" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
+                                    <h5 class="nobottommargin">Klook Users</h5>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="widget subscribe-widget clearfix">
+                            <h5><strong>Send us </strong>your valuabe feedback at the email or call us at the phone number mentioned   </h5>
+                            <div id="widget-subscribe-form-result" data-notify-type="success" data-notify-msg=""></div>
+                            <form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post" class="nobottommargin">
+                                <div class="input-group divcenter">
+                                    <span class="input-group-addon"><i class="icon-email2"></i></span>
+                                    <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-success" type="submit">Subscribe</button>
+                                    </span> 
+                                </div>
+                            </form>
+                            <script type="text/javascript">
+                                $("#widget-subscribe-form").validate({
+                                    submitHandler: function(form) {
+                                        $(form).find('.input-group-addon').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
+                                        $(form).ajaxSubmit({
+                                            target: '#widget-subscribe-form-result',
+                                            success: function() {
+                                                $(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
+                                                $('#widget-subscribe-form').find('.form-control').val('');
+                                                $('#widget-subscribe-form-result').attr('data-notify-msg', $('#widget-subscribe-form-result').html()).html('');
+                                                SEMICOLON.widget.notifications($('#widget-subscribe-form-result'));
+                                            }
+                                        });
+                                    }
+                                });
+                            </script>
+                        </div>
+
+                        <div class="widget clearfix" style="margin-bottom: -20px;">
+
+                            <div class="row">
+
+                                <div class="col-md-6 clearfix bottommargin-sm">
+                                    <a href="#" class="social-icon si-dark si-colored si-facebook nobottommargin" style="margin-right: 10px;">
+                                        <i class="icon-facebook"></i>
+                                        <i class="icon-facebook"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/klookglobal/"><small style="display: block; margin-top: 3px;"><strong>Like us</strong><br>on Facebook</small></a>
+                                </div>
+                                
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div><!-- .footer-widgets-wrap end -->
+
+            </div>
+
+            <!-- Copyrights
+            ============================================= -->
+            <div id="copyrights">
+
+				<div class="container clearfix">
+
+					<div class="col_half">
+						Copyrights &copy; 2014-2019 Klook Travel Technology.All Rights Reserved<br>
+            <!-- #copyrights end -->
+
+
+        </footer><!-- #footer end -->
+
+    </div><!-- #wrapper end -->
+
+    <!-- Go To Top
+    ============================================= -->
+    <div id="gotoTop" class="icon-angle-up"></div>
+
+    <!-- Footer Scripts
+    ============================================= -->
+    <script type="text/javascript" src="js/functions.js"></script>
+
+</body>
+</html>
